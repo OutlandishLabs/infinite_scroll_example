@@ -1,0 +1,9 @@
+-@posts.each do |post|
+  div style="height:250px"
+    label
+      | id 
+      =post.id
+    div
+      =post.description
+#infinite-scrolling
+  =will_paginate(@posts)
