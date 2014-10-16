@@ -11,7 +11,6 @@ $ ->
           $('.pagination').html("")
           $.ajax
             url: more_posts_url
-            dataType: "text"
             success: (data) ->
               $("#posts").append(data)
       if !more_posts_url
